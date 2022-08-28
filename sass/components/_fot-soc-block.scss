@@ -1,0 +1,48 @@
+.footer__foot-block {
+  align-items: baseline;
+  display: flex;
+}
+
+.foot-block__foot-soc {
+  margin-left: 70px;
+}
+
+.foot-soc__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--hero-color);
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.foot-soc__social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social-icons__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--hero-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
