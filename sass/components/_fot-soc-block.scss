@@ -1,10 +1,28 @@
 .footer__foot-block {
-  align-items: baseline;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .foot-block__foot-soc {
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .foot-soc__title {
