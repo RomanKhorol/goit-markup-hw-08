@@ -91,6 +91,11 @@ img {
   min-width: 200px;
   height: 50px;
 }
+@media screen and (min-width: 320px) {
+  .btn-hero {
+    font-size: 14px;
+  }
+}
 
 .logo {
   font-family: "Raleway";
@@ -333,15 +338,35 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .foot-block__foot-form {
-    align-self: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.form-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .form-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-wrapper {
     flex-direction: row;
-    gap: 0px;
   }
 }
 
@@ -354,8 +379,9 @@ img {
   text-transform: uppercase;
   color: var(--hero-color);
 }
+
 .foot-form__input {
-  width: 100%;
+  width: 358px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -375,19 +401,19 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .foot-form__input {
-    max-width: 450px;
+    width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .foot-form__input {
-    max-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .foot-form__input {
-    max-width: 358px;
+    width: 358px;
   }
 }
 
@@ -580,12 +606,26 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.1);
 }
+@media screen and (min-width: 320px) {
+  .modal {
+    max-width: 90%;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+}
 
 .btn-modal {
   position: absolute;
   display: inline-flex;
-  transform: translateY(-40px);
-  margin: 11px 8px 2px 450px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -596,6 +636,18 @@ img {
 .btn-modal:focus {
   border: 1px solid var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .btn-modal {
+    transform: translateY(-40px);
+    margin: 11px 8px 2px 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-modal {
+    transform: translateY(-40px);
+    margin: 11px 8px 2px 450px;
+  }
+}
 
 .mod-svg {
   align-self: center;
@@ -604,8 +656,10 @@ img {
   fill: var(--accent-color);
 }
 
-.mod-form {
-  width: 448px;
+@media screen and (min-width: 320px) {
+  .mod-form {
+    min-width: 100%;
+  }
 }
 
 .form-title {
@@ -617,6 +671,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 480px) {
+  .form-title {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-title {
+    width: 448px;
+  }
 }
 
 .form-cont-list {
@@ -670,6 +734,16 @@ img {
 .form-input:focus {
   border: 1px solid var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .form-input {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-input {
+    max-width: 448px;
+  }
+}
 
 .form-text {
   width: 100%;
@@ -688,6 +762,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 480px) {
+  .form-text {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-text {
+    max-width: 448px;
+  }
 }
 
 .checkbox {
@@ -717,23 +801,55 @@ img {
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   align-items: center;
-  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .check-agre {
+    justify-content: center;
+  }
 }
 
 .checkbox-text {
   margin: 0px;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+}
+@media screen and (min-width: 320px) {
+  .checkbox-text {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .checkbox-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .form-link {
   margin-left: 7px;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(33, 150, 243);
+}
+@media screen and (min-width: 320px) {
+  .form-link {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form-link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .form-button {
@@ -755,6 +871,12 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
+@media screen and (min-width: 480px) {
+  .form-button {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+}
 
 .header {
   border-bottom: 1px solid var(--border-bc);
@@ -765,17 +887,36 @@ img {
 }
 
 .hero {
+  max-width: 480px;
+  height: 400px;
   background-color: var(--back-hero-footer-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../css/Img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 320px) {
+  .hero {
+    width: 100%;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 100%;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero-head {
@@ -785,10 +926,27 @@ img {
   margin-right: auto;
   color: var(--hero-color);
   font-weight: 900;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 479.5px) {
+  .hero-head {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-head {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-head {
+    width: 750px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .task-list {

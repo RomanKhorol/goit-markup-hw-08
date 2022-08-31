@@ -12,4 +12,7 @@
   cursor: pointer;
   min-width: 200px;
   height: 50px;
+  @media screen and (min-width: 320px) {
+    font-size: 14px;
+  }
 }
