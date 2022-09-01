@@ -21,11 +21,12 @@
   fill: currentColor;
 }
 .contacts {
-  display: flex;
+  display: none;
+  // display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
-  display: flex;
+  // display: flex;
   align-items: center;
   gap: 50px;
 }

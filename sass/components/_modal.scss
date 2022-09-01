@@ -1,7 +1,7 @@
 .modal {
   position: absolute;
   width: 528px;
-  padding: 40px;
+  padding: 25px 30px;
   top: 50%;
   left: 50%;
   border-radius: 4px;
@@ -21,6 +21,7 @@
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
+    padding: 40px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -76,9 +77,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  // @media screen and (min-width: 320px) {
-  //   font-size: 15px;
-  // }
+  @media screen and (min-width: 320px) {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media screen and (min-width: 480px) {
     width: 370px;
   }
@@ -203,7 +206,7 @@
   align-items: center;
 
   @media screen and (min-width: 1200px) {
-    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -267,7 +270,5 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   @media screen and (min-width: 480px) {
-    margin-left: 85px;
-    margin-right: 85px;
   }
 }
