@@ -58,43 +58,50 @@
             <use href="./img/menu-but.svg#icon-menu_40px"></use>
           </svg>
         </button>
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
           <div class="mob-cotainer">
-            <div><button class="menu-close" type="button">
-            <svg class="menu-svd" width="40" height="40">
-              <use href="./img/mod-svg.svg#icon-close_40px"></use>
-            </svg>
-          </button>
-          <ul class="mob-navigations list">
-            <li class="mob-navigations-item">
-              <a href="" class="mob-navigations-link current link">Студия</a>
-            </li>
-            <li class="mob-navigations-item">
-              <a href="./portfolio.html" class="mob-navigations-link link">Портфолио</a>
-            </li>
-            <li class="mob-navigations-item"><a href="" class="mob-navigations-link link">Контакты</a></li>
-          </ul>
-        </nav></div>
-            <div><ul class="mob-contacts list">
-           <li class="mob-contacts-item">
-            <a href="tel:+380961111111" class="mob-contacts-tel link"
-              >+38 096 111 11 11</a>
-          </li>
-          <li class="mob-contacts-item">
-            <a href="mailto" class="mob-contacts-link link">
-              info@devstudio.com</a>
-          </li>
-        </ul>
-       <ul class="mob-soc-list">
-        <li class="mob-soc-item list"><a href="mailto" class="mob-soc-link link">
-              Instagram</a></li>
-        <li class="mob-soc-item list"><a href="mailto" class="mob-soc-link link">
-              Twitter</a></li>
-        <li class="mob-soc-item list"><a href="mailto" class="mob-soc-link link">
-              Facebook</a></li>
-        <li class="mob-soc-item list"><a href="mailto" class="mob-soc-link link">
-              LinkedIn</a></li>
-       </ul></div>
+            <div>
+              <button class="menu-close" type="button">
+                <svg class="menu-svd" width="40" height="40">
+                  <use href="./img/mod-svg.svg#icon-close_40px"></use>
+                </svg>
+              </button>
+              <ul class="mob-navigations list">
+                <li class="mob-navigations-item">
+                  <a href="" class="mob-navigations-link current link">Студия</a>
+                </li>
+                <li class="mob-navigations-item">
+                  <a href="./portfolio.html" class="mob-navigations-link link">Портфолио</a>
+                </li>
+                <li class="mob-navigations-item">
+                  <a href="" class="mob-navigations-link link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mob-contacts list">
+                <li class="mob-contacts-item">
+                  <a href="tel:+380961111111" class="mob-contacts-tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts-item">
+                  <a href="mailto" class="mob-contacts-link link"> info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mob-soc-list">
+                <li class="mob-soc-item list">
+                  <a href="mailto" class="mob-soc-link link"> Instagram</a>
+                </li>
+                <li class="mob-soc-item list">
+                  <a href="mailto" class="mob-soc-link link"> Twitter</a>
+                </li>
+                <li class="mob-soc-item list">
+                  <a href="mailto" class="mob-soc-link link"> Facebook</a>
+                </li>
+                <li class="mob-soc-item list">
+                  <a href="mailto" class="mob-soc-link link"> LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -178,7 +185,14 @@
               </div>
             </li>
             <li class="wedo-item">
-              <img src="img/wedo2.jpg" alt="Разрабатываем дизайн" width="370" />
+              <picture>
+                <source
+                  srcset="../img/wedo2.jpg 1x, ../img/wedo2-dtx2.jpg 2x"
+                  media="min-with:1200px"
+                />
+                <img src="../img/wedo2.jpg" alt="Разрабатываем дизайн" />
+              </picture>
+
               <div class="over-block">
                 <h3 class="over-block-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
               </div>

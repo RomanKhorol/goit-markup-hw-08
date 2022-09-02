@@ -30,6 +30,9 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .navigations__link--current {
