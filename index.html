@@ -179,7 +179,14 @@
           <h2 class="wedo-title">Чем мы занимаемся</h2>
           <ul class="wedo-list list">
             <li class="wedo-item">
-              <img src="./img/wedo1.jpg" alt="Строим схемы" width="370" />
+              <picture>
+                <source
+                  srcset="./img/wedo1-dt-1x.jpg 1x, ./img/wedo1-dt-1x.jpg 2x"
+                  media="(min-with: 1200px)"
+                />
+                <img src="./img/wedo1.jpg" alt="Строим схемы" />
+              </picture>
+
               <div class="over-block">
                 <h3 class="over-block-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
               </div>
@@ -198,7 +205,14 @@
               </div>
             </li>
             <li class="wedo-item">
-              <img src="img/wedo3.jpg" alt="Стилизуем" width="370" />
+              <picture>
+                <source
+                  srcset="./img/wedo3-dt-1x.jpg 1x, ./img/wedo3-dt-2x.jpg 2x"
+                  media="(min-with: 1200px)"
+                />
+                <img src="img/wedo3.jpg" alt="Стилизуем" />
+              </picture>
+
               <div class="over-block">
                 <h3 class="over-block-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
               </div>
@@ -264,7 +278,22 @@
               </ul>
             </li>
             <li class="team-item team-set__team-item team-set__team-item--color">
-              <img src="./img/tem2.jpg" class="team-item__image" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./img/team2-mob-1x.jpg 1x, ./img/team2-mob-2x.jpg 2x"
+                  media="(max-with: 768px)"
+                />
+                <source
+                  srcset="./img/team2-tab-1x.jpg 1x, ./img/team2-tab-2x.jpg 2x"
+                  media="(min-with: 768px)"
+                />
+                <source
+                  srcset="./img/team2-dt-1x.jpg 1x, ./img/team2-dt-1x.jpg 2x"
+                  media="(min-with: 1200px)"
+                />
+                <img src="./img/tem2.jpg" class="team-item__image" alt="Ольга Репина" />
+              </picture>
+
               <h2 class="team-set__fd">Ольга Репина</h2>
               <p class="team-set__fd-title">Frontend Developer</p>
               <ul class="soc-list team-set__soc-list list">
@@ -299,12 +328,22 @@
               </ul>
             </li>
             <li class="team-item team-set__team-item team-set__team-item--color">
-              <img
-                src="./img/tem3.jpg"
-                class="team-item__image"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./img/team3-mob-1x.jpg 1x, ./img/team3-mob-2x.jpg 2x"
+                  media="(max-with: 768px)"
+                />
+                <source
+                  srcset="./img/team3-tab-1x.jpg 1x, ./img/team3-tab-2x.jpg 2x"
+                  media="(min-with: 768px)"
+                />
+                <source
+                  srcset="./img/team3-dt-1x.jpg 1x, ./img/team3-dt-2x.jpg 2x"
+                  media="(min-with: 1200px)"
+                />
+                <img src="./img/tem3.jpg" class="team-item__image" alt="Николай Тарасов" />
+              </picture>
+
               <h2 class="team-set__marc">Николай Тарасов</h2>
               <p class="team-set__mark-title">Marketing</p>
               <ul class="soc-list team-set__soc-list list">
@@ -339,7 +378,22 @@
               </ul>
             </li>
             <li class="team-item team-set__team-item team-set__team-item--color">
-              <img src="./img/tem4.jpg" class="team-item__image" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./img/team4-tab-1x.jpg 1x, ./img/team4-mob-2x.jpg 2x"
+                  media="(max-with: 768px)"
+                />
+                <source
+                  srcset="./img/team4-tab-1x.jpg 1x, ./img/team4-tab-1x.jpg 2x"
+                  media="(min-with: 768px)"
+                />
+                <source
+                  srcset="./img/team4-dt-1x.jpg 1x, ./img/team4-dt-1x.jpg 2x"
+                  media="(min-with: 1200px)"
+                />
+                <img src="./img/tem4.jpg" class="team-item__image" alt="Михаил Ермаков" />
+              </picture>
+
               <h2 class="team-set__des">Михаил Ермаков</h2>
               <p class="team-set__des-title">UI Designer</p>
               <ul class="soc-list team-set__soc-list list">
