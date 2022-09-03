@@ -543,8 +543,7 @@ img {
 }
 
 .work-title {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primery-text-color);
@@ -1082,7 +1081,8 @@ img {
   height: 400px;
   background-color: var(--back-hero-footer-color);
   text-align: center;
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
   max-width: 480px;
@@ -1126,6 +1126,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
+    padding: 200px 60px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-dt-x1.jpg);
   }
 }
@@ -1176,8 +1178,8 @@ img {
 }
 
 .task {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .task-item {
@@ -1210,7 +1212,6 @@ img {
 .punctuality,
 .planning,
 .tech {
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -1219,6 +1220,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .details,
+.punctuality,
+.planning,
+.tech {
+    text-align: center;
+  }
 }
 
 .details-text,
@@ -1233,12 +1242,12 @@ img {
 
 .wedo {
   display: none;
-  margin-bottom: 94px;
   padding-top: 0;
 }
 @media screen and (min-width: 1200px) {
   .wedo {
     display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -1293,6 +1302,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--back-team-color);
+}
+@media screen and (min-width: 1200px) {
+  .main-content__team-set {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-set__title {
@@ -1423,6 +1438,13 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .client {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .client-list {
   display: flex;
@@ -1482,4 +1504,11 @@ img {
   color: var(--back-midle-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .porfolio {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }/*# sourceMappingURL=main.css.map */
