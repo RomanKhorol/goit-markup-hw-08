@@ -7,26 +7,29 @@
   padding-bottom: 118px;
 
   background-repeat: no-repeat;
-  background-position: center;
+
   max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 320px) {
     width: 100%;
+    // background-size: contain;
     .container {
       display: flex;
       justify-content: center;
     }
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/hero-mob-x1.jpg);
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero-mob-x2.jpg);
     }
   }
   @media screen and (min-width: 480px) {
-    max-width: 100%;
+    // max-width: 100%;
+
     .container {
       display: flex;
       justify-content: center;
@@ -36,16 +39,19 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/hero-tab-x1.jpg);
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero-tab-x2.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
+    max-width: 1200px;
     height: 600px;
-    padding: 200px 60px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/hero-dt-x1.jpg);
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero-dt-x2.jpg);
